@@ -86,6 +86,56 @@
     .facebook { background-color: #1877F2; }
     .whatsapp { background-color: #25D366; }
 
+    .order-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 14px 28px;
+      background-color: #d62976;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .order-btn:hover {
+      background-color: #c2185b;
+    }
+
+    .contact-form {
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .contact-form button {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1da851;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -115,6 +165,10 @@
         width: 100%;
         margin: 10px 0;
       }
+
+      .order-btn {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -129,6 +183,18 @@
     <a href="#" target="_blank" class="social instagram">انستغرام</a>
     <a href="#" target="_blank" class="social tiktok">تيكتوك</a>
     <a href="#" target="_blank" class="social facebook">فيسبوك</a>
+
+    <a href="https://wa.me/212660799535?text=أرغب%20في%20طلب%20منتج%20من%20بوتيك%20غايتي" target="_blank" class="order-btn">اطلبي الآن</a>
+
+    <div class="contact-form">
+      <h2>📩 تواصلي معنا مباشرة</h2>
+      <form>
+        <input type="text" name="name" placeholder="الاسم الكامل" required />
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+        <textarea name="message" rows="4" placeholder="رسالتك أو استفسارك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
   </div>
 
   <footer>
